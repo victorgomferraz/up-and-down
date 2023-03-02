@@ -18,5 +18,5 @@ $ docker compose up
 ```
 O vai ser gerado um artefato chamado "up-and-down" na arquitetura linux.
 Esse artefato utiliza 2 variáveis de ambiente:
-- PORT: Porta que o servidor vai subir e ficar online (Obrigatório)
-- DELAY: Tempo em segundos que o servidor vai ficar online. (Opcional, padrão 3 segundos)
+- UP_AND_DOWN_PORT: Porta que o servidor vai subir e ficar online (Obrigatório)
+- UP_AND_DOWN_DELAY: Tempo em segundos que o servidor vai ficar online. (Opcional, padrão 3 segundos)

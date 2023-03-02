@@ -49,7 +49,7 @@ func startHttpServer(wg *sync.WaitGroup, port string) *http.Server {
 }
 
 func getPort() string {
-	port := os.Getenv("PORT")
+	port := os.Getenv("UP_AND_DOWN_PORT")
 	if _, err := strconv.Atoi(port); err != nil {
 		panic("Port is not a number:" + port)
 	}
@@ -57,7 +57,7 @@ func getPort() string {
 }
 
 func getDelay() int {
-	delayString := os.Getenv("DELAY")
+	delayString := os.Getenv("UP_AND_DOWN_DELAY")
 	if delayString == "" {
 		delayString = "3"
 	}

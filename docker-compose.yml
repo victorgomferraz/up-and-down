@@ -5,4 +5,4 @@ services:
     volumes:
       - .:/go/src
     working_dir: /go/src
-    command: go build ./cmd/up-and-down
+    command: go build -ldflags "-s -w" ./cmd/up-and-down
